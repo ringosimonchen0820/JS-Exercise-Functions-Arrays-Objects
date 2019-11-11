@@ -329,10 +329,15 @@ const argTimesTwo = (num) => {
 */
 function carMaker(/* code here */num) {
   /* code here */
-  var obj = {
-    odometer: num,
-    drive: 
+  var obj = {}
+  obj.odometer = num;
+  
+  obj.drive = function(distance) {
+    obj.odometer += distance;
+    return obj.odometer;
   }
+
+  return obj;
 }
 
 /// ////// END OF CHALLENGE /////////
