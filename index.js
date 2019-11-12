@@ -64,7 +64,7 @@ function makePersonObject(/* code here */userID, userName, userEmail) {
 */
 function getName(/* code here */obj) {
   /* code here */
-  return "Hello, my name is " + obj.name + ".";
+  return `Hello, my name is ${obj.name}.`;
 }
 
 /**
@@ -88,7 +88,7 @@ function makeSmartPerson(/* code here */ name) {
     return num1 + num2
   };
   obj.speak = function() {
-    return "Hello, my name is " + name
+    return `Hello, my name is ${name}.`
   };
 
   return obj;
@@ -150,9 +150,9 @@ function get3rdCar(inventory) {
 function getCarInfoByIndex(inventory, index) {
   /* code here */
   var car;
-  car = inventory[index].car_make + " " + inventory[index].car_model;
+  car = `${inventory[index].car_make} ${inventory[index].car_model}`;
   
-  return "This is a " + car + ".";
+  return `This is a ${car}.`;
 }
 
 /**
@@ -170,7 +170,7 @@ function getLastCarInfo(/* code here */inventory) {
   /* code here */
   var lastCarIndex = inventory.length - 1;
 
-  return "This is a " + inventory[lastCarIndex].car_make + " " + inventory[lastCarIndex].car_model + ".";
+  return `This is a ${inventory[lastCarIndex].car_make} ${inventory[lastCarIndex].car_model}.`
 }
 
 /**
@@ -189,7 +189,7 @@ function getCarInfoById(/* code here */inventory, id) {
   /* code here */
   var carIndex = Number(id) - 1;
 
-  return "This is a " + inventory[carIndex].car_make + " " + inventory[carIndex].car_model + ".";
+  return `This is a ${inventory[carIndex].car_make} ${inventory[carIndex].car_model}.`;
 }
 
 /**
